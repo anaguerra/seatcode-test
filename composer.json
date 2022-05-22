@@ -1,0 +1,36 @@
+{
+    "description": "Seat CODE Technical Interview",
+    "authors": [],
+    "require": {
+        "php": "^7.4",
+        "ext-json": "*",
+        "bensampo/laravel-enum": "^3",
+        "psr/log": "^1.1",
+        "ramsey/uuid": "^4.1",
+        "php-di/php-di": "^6.3",
+        "nesbot/carbon": "^2.56",
+        "larapack/dd": "^1.1"
+    },
+    "require-dev": {
+        "monolog/monolog": "^2.1",
+        "friendsofphp/php-cs-fixer": "^v2.18",
+        "phpstan/phpstan": "^0.12",
+        "phpunit/phpunit": "^9.5"
+    },
+    "scripts": {
+        "phpunit": "./vendor/bin/phpunit -c phpunit.xml",
+        "phpstan": "./vendor/bin/phpstan analyse",
+        "php-cs-fixer": "./vendor/bin/php-cs-fixer fix --allow-risky=yes"
+
+    },
+    "autoload": {
+        "psr-4": {
+            "SeatCode\\Interview\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SeatCode\\Interview\\Tests\\": "tests"
+        }
+    }
+}

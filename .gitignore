@@ -1,0 +1,7 @@
+.idea
+vendor
+coverage.xml
+logfile.xml
+.phpunit.result.cache
+.php_cs.cache
+tmp
